@@ -6,32 +6,53 @@
     <title>Payoo</title>
 
     <!-- daisy UI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
- <body class="bg-[#F4F5F7] h-[100vh] flex flex-col justify-center items-center">
-
-    <div class="h-[130px] w-[300px] bg-[url(/assets/bg.png)] bg-cover flex justify-center items-center">
-        <img src="./assets/Group.png" alt="">
+  <body
+    class="bg-[#F4F5F7] h-[100vh] flex flex-col justify-center items-center"
+  >
+    <div
+      class="h-[130px] w-[300px] bg-[url(/assets/bg.png)] bg-cover flex justify-center items-center"
+    >
+      <img src="./assets/Group.png" alt="" />
     </div>
 
-    <form class=" w-[350px] bg-white rounded-3xl p-6">
-        <div class="">
-            <label class="font-bold" for="">Mobile Number</label>
-            <br>
-            <input class="bg-[#F4F5F7] rounded-3xl mt-3 p-2 w-full border-none" type="Number" placeholder="Enter Your Number" >
-        </div>
-        <div class="mt-5">
-            <label class="font-bold" for="">4 Digit Pin</label>
-            <br>
-            <input class="bg-[#F4F5F7] rounded-3xl mt-3 p-2 w-full border-none" type="text" placeholder="Enter 4 Digit Pin" >
-        </div>
+    <form class="w-[350px] bg-white rounded-3xl p-6">
+      <div class="">
+        <label  class="font-bold" for="">Mobile Number</label>
+        <br />
+        <input id="mobile-number"
+          class="bg-[#F4F5F7] rounded-3xl mt-3 p-2 w-full border-none"
+          type="Number"
+          placeholder="Enter Your Number"
+        />
+      </div>
+      <div class="mt-5">
+        <label  class="font-bold" for="">4 Digit Pin</label>
+        <br />
+        <input
+          id="pin-number" class="bg-[#F4F5F7] rounded-3xl mt-3 p-2 w-full border-none"
+          type="text"
+          placeholder="Enter 4 Digit Pin"
+        />
+      </div>
 
-        <button class="btn bg-[#0874F2] w-full mt-5 rounded-3xl text-white">Primary</button>
-        
-
+      <button
+        type="button"
+        id="loginButton"
+        class="btn bg-[#0874F2] w-full mt-5 rounded-3xl text-white"
+      >
+        Login
+      </button>
     </form>
- </body>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
